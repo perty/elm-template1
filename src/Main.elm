@@ -36,10 +36,11 @@ type alias Model =
 
 
 -- The init function gives the initial model. We declare that the initial model has a count of 0.
+-- "flags" is currently not used so we put an underline in its place.
 
 
 init : flags -> ( Model, Cmd message )
-init flags =
+init _ =
     ( { count = 0 }, Cmd.none )
 
 
@@ -104,8 +105,9 @@ view model =
 
 -- Currently, we have no subscriptions. We will use it later to receive events from the outside of our
 -- program, such as that time has passed.
+-- "Model" is currently not used so we put an underline in its place.
 
 
 subscriptions : Model -> Sub message
-subscriptions model =
+subscriptions _ =
     Sub.none

@@ -101,6 +101,11 @@ view model =
         ]
 
 
+
+-- Currently, we have no subscriptions. We will use it later to receive events from the outside of our
+-- program, such as that time has passed.
+
+
 subscriptions : Model -> Sub message
 subscriptions model =
     Sub.none

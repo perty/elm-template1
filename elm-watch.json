@@ -1,6 +1,6 @@
 {
     "targets": {
-        "Todo board": {
+        "Simple": {
             "inputs": [
                 "src/Main.elm"
             ],

@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "simple-frontend",
+  "name": "template-frontend",
   "scripts": {
     "postinstall": "elm-tooling install",
     "start": "elm-watch hot",

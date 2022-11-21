@@ -1,6 +1,6 @@
 {
     "targets": {
-        "Simple": {
+        "Template": {
             "inputs": [
                 "src/Main.elm"
             ],

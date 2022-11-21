@@ -81,6 +81,7 @@ update message model =
 view : Model -> Html Message
 view model =
     -- The HTML div tag is a divider that is used to group other elements.
+    -- The function must return one element only so we need to group everything.
     div []
         [ -- A button tag shows a button on the page. The attribute onClick is telling which message
           -- should be sent when the user clicks it.

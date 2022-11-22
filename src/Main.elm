@@ -1,8 +1,9 @@
 -- The first thing of your web application is the Main module.
--- It exposes (make available externally of this module) one function "main".
+-- It exposes (make available externally of this module) the functions "main", used by the browser
+-- and the function fromFahrenheit which we want to access from the tests.
 
 
-module Main exposing (main)
+module Main exposing (fromFahrenheit, main)
 
 -- The import statements list modules that we want to use.
 
@@ -112,3 +113,14 @@ view model =
 subscriptions : Model -> Sub message
 subscriptions _ =
     Sub.none
+
+
+
+-- Biz logic. Not implemented yet. We have only declared the function.
+-- See the ConverterTests.elm file for tests of this function.
+
+
+fromFahrenheit : Float -> Float
+fromFahrenheit fahrenheit =
+    -- We just return zero no matter what.
+    0
